@@ -4,14 +4,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Сайт Bootstrap + BEM</title>
-	<link rel="stylesheet" href="css/style.css">
+
 	<!-- font awesome -->
 	<link rel="stylesheet" href="css/awesome-all.css">
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- slick -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic"
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:700&display=swap&subset=cyrillic"
 		rel="stylesheet">
 </head>
 
@@ -39,12 +43,329 @@
 		</div>
 	</header>
 
+	<section class="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<h1 class="intro__title">Web development project</h1>
+					<p class="intro__text">Web development project</p>
+					<button class="btn btn--main">OUR SERVICES</button><button class="btn btn--main">HIRE IS
+						NOW</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-8 ">
+					<h3 class="global__title">About Us</h3>
+					<div class="global__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-around">
+				<div class="col-xl-3">
+					<div class="about__footer__icon"> <img src="./img/about/internet.png" alt=""> </div>
+					<div class="about__footer__title">Awesome Icons</div>
+					<div class="about__footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+						aperiam.</div>
+				</div>
+				<div class="col-xl-3">
+					<div class="about__footer__icon"> <img src="./img/about/transfer.png" alt=""> </div>
+					<div class="about__footer__title">One Page</div>
+					<div class="about__footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+						aperiam.</div>
+				</div>
+				<div class="col-xl-3">
+					<div class="about__footer__icon"> <img src="./img/about/head.png" alt=""> </div>
+					<div class="about__footer__title">Fully Responsive</div>
+					<div class="about__footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+						aperiam.</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="services">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-8">
+					<div class="global__title">Our Services</div>
+					<div class="global__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+				</div>
+			</div>
+			<div class="row justify-content-between">
+				<div class="col-xl-4">
+					<div class="services__card align-self-start">
+						<div class="services__icon"><i class="fas fa-search icon"></i></div>
+						<div class="services__title">Research</div>
+						<div class="services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+							blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+						<div class="btn btn--services">READ MORE</div>
+					</div>
+				</div>
+				<div class="col-xl-4">
+					<div class="services__card">
+						<div class="services__icon"><i class="far fa-images icon"></i></div>
+						<div class="services__title">Portfolio</div>
+						<div class="services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+							blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+						<div class="btn btn--services">READ MORE</div>
+					</div>
+				</div>
+				<div class="col-xl-4">
+					<div class="services__card align-self-end">
+						<div class="services__icon"><i class="fas fa-headset icon"></i></div>
+						<div class="services__title">Support</div>
+						<div class="services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+							blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+						<div class="btn btn--services">READ MORE</div>
+					</div>
+				</div>
+
+
+				<div class="col-xl-4">
+					<div class="services__card align-self-start">
+						<div class="services__icon"><i class="far fa-folder icon"></i></div>
+						<div class="services__title">Documentation</div>
+						<div class="services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+							blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+						<div class="btn btn--services">READ MORE</div>
+					</div>
+				</div>
+				<div class="col-xl-4">
+					<div class="services__card">
+						<div class="services__icon"><i class="fas fa-code icon"></i></div>
+						<div class="services__title">Development</div>
+						<div class="services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+							blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+						<div class="btn btn--services">READ MORE</div>
+					</div>
+				</div>
+				<div class="col-xl-4">
+					<div class="services__card align-self-end">
+						<div class="services__icon"><i class="fas fa-palette icon"></i></div>
+						<div class="services__title">Design</div>
+						<div class="services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+							blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+						<div class="btn btn--services">READ MORE</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="works">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-8">
+					<h3 class="global__title">Latest Works</h3>
+					<div class="global__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+					</div>
+
+					<button class="btn btn--main btn--black active" filter="all">ALL</button>
+					<button class="btn btn--main btn--black" filter="web">WEB DESIGN</button>
+					<button class="btn btn--main btn--black" filter="des">UI/UX DESIGN</button>
+					<button class="btn btn--main btn--black" filter="moc">MOCKUPS</button>
+
+				</div>
+			</div>
+			<div class="row justify-content-center filter">
+				<div class="col-xl-4 filter__item moc">
+					<div class="works__item__wrapper">
+						<img class="works__img" src="./img/item-1.png" alt="">
+						<div class="works__mask">
+							<h5 class="works__mask__title">Hand Watch</h5>
+							<div class="works__mask__subtitle">MOCKUPS</div>
+						</div>
+					</div>
+				</div>
+				<div class=" col-xl-4 filter__item web">
+					<div class="works__item__wrapper">
+						<img class="works__img" src="./img/item-2.png" alt="">
+						<div class="works__mask">
+							<h5 class="works__mask__title">Hand Watch</h5>
+							<div class="works__mask__subtitle">WEB DESIGN</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 filter__item web">
+					<div class="works__item__wrapper">
+						<img class="works__img" src="./img/item-3.png" alt="">
+						<div class="works__mask">
+							<h5 class="works__mask__title">Hand Watch</h5>
+							<div class="works__mask__subtitle">WEB DESIGN</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 filter__item des">
+					<div class="works__item__wrapper">
+						<img class="works__img" src="./img/item-4.png" alt="">
+						<div class="works__mask">
+							<h5 class="works__mask__title">Hand Watch</h5>
+							<div class="works__mask__subtitle">WEB DESIGN</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 filter__item moc">
+					<div class="works__item__wrapper">
+						<img class="works__img" src="./img/item-5.png" alt="">
+						<div class="works__mask">
+							<h5 class="works__mask__title">Hand Watch</h5>
+							<div class="works__mask__subtitle">MOCKUPS</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 filter__item des">
+					<div class="works__item__wrapper">
+						<img class="works__img" src="./img/item-6.png" alt="">
+						<div class="works__mask">
+							<h5 class="works__mask__title">Hand Watch</h5>
+							<div class="works__mask__subtitle">Web disign</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xl-12">
+				<button class="btn btn--main btn--black active" filter="all">VIEW ALL</button>
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<section class="price">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-8 ">
+					<h3 class="global__title">About Us</h3>
+					<div class="global__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xl-4">
+					<div class="pirce__card">
+						<div class="price__card__title">Free Trail</div>
+						<div class="price__card__price">00<span>per month</span> </div>
+						<ul class="price__card__info">
+							<li class="price__card__info__item">30 Free Trail</li>
+							<li class="price__card__info__item">5 Free Projects</li>
+							<li class="price__card__info__item">PHP 5 Enabled</li>
+							<li class="price__card__info__item">24/7 Suports</li>
+						</ul>
+
+						<button class="btn btn--black">Order Now</button>
+					</div>
+				</div>
+				<div class="col-xl-4">
+					<div class="pirce__card">
+						<div class="price__card__title">Basic</div>
+						<div class="price__card__price">50<span>per month</span> </div>
+						<ul class="price__card__info">
+							<li class="price__card__info__item">30 Free Trail</li>
+							<li class="price__card__info__item">5 Free Projects</li>
+							<li class="price__card__info__item">PHP 5 Enabled</li>
+							<li class="price__card__info__item">24/7 Suports</li>
+						</ul>
+
+						<button class="btn btn--black">Order Now</button>
+					</div>
+				</div>
+				<div class="col-xl-4">
+					<div class="pirce__card">
+						<div class="price__card__title">Ultimates</div>
+						<div class="price__card__price">99<span>per month</span> </div>
+						<ul class="price__card__info">
+							<li class="price__card__info__item">30 Free Trail</li>
+							<li class="price__card__info__item">5 Free Projects</li>
+							<li class="price__card__info__item">PHP 5 Enabled</li>
+							<li class="price__card__info__item">24/7 Suports</li>
+						</ul>
+
+						<button class="btn btn--black">Order Now</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="team">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-8 ">
+					<h3 class="global__title">Our Team Member</h3>
+					<div class="global__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-xl-4">
+					<div class="team__card">
+						<div class="team__img"><img src="./img/team-1.png" alt=""></div>
+						<div class="team__name">John Doe</div>
+						<div class="team__prof">General Manager</div>
+						<div class="team__social">
+							<a class="team__social__item href=" #"><i class="fab fa-facebook-f"></i></a>
+							<a class="team__social__item href=" #"><i class="fab fa-twitter"></i></a>
+							<a class="team__social__item href=" #"><i class="fas fa-comments"></i></a>
+							<a class="team__social__item href=" #"><i class="fas fa-basketball-ball"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xl-4">
+					<div class="team__card">
+						<div class="team__img"><img src="./img/team-2.png" alt=""></div>
+						<div class="team__name">Alexa Biru</div>
+						<div class="team__prof">Office Director </div>
+						<div class="team__social">
+							<a class="team__social__item href=" #"><i class="fab fa-facebook-f"></i></a>
+							<a class="team__social__item href=" #"><i class="fab fa-twitter"></i></a>
+							<a class="team__social__item href=" #"><i class="fas fa-comments"></i></a>
+							<a class="team__social__item href=" #"><i class="fas fa-basketball-ball"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xl-4">
+					<div class="team__card">
+						<div class="team__img"><img src="./img/team-3.png" alt=""></div>
+						<div class="team__name">Ronobir sing</div>
+						<div class="team__prof">Admin</div>
+						<div class="team__social">
+							<a class="team__social__item href=" #"><i class="fab fa-facebook-f"></i></a>
+							<a class="team__social__item href=" #"><i class="fab fa-twitter"></i></a>
+							<a class="team__social__item href=" #"><i class="fas fa-comments"></i></a>
+							<a class="team__social__item href=" #"><i class="fas fa-basketball-ball"></i></a>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
 
 
 	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-		crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- slick -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<!-- XZ what this -->
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -53,6 +374,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 		crossorigin="anonymous"></script>
+	<!-- main.js -->
+	<script src="js/main.js"></script>
 </body>
 
 </html>
