@@ -15,6 +15,17 @@ ul,li {
 
 }
 
+a {
+	color:inherit;
+	text-decoration: none;
+}
+
+
+
+button:focus {
+	outline: none;
+}
+
 
 
 .menu-bar {
@@ -374,4 +385,84 @@ ul,li {
 
 .team__social__item + .team__social__item {
 	margin-left: 28px;
+}
+
+
+/*team-slide*/
+.team .slick-dots {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.team .slick-dots li {
+	padding: 0 5px;
+}
+
+.team .slick-dots li button {
+	width: 17px;
+	height: 17px;
+
+	border:none;
+	border-radius: 50%;
+	background: #00897b;
+	font-size: 0;
+
+	transition: .3s;
+}
+
+.team .slick-dots .slick-active button {
+	background: #3949ab;
+}
+
+/*blog*/
+.blog {
+	padding: 120px 0 125px;
+	text-align: center;
+	background: #e4fdf9;
+}
+
+.blog__img {
+	width: 100%
+}
+
+.blog__article {
+	padding-top: 60px;
+	text-align: left;
+}
+.blog__title {
+	margin-bottom: 30px;
+	font-size: 25px;
+	font-weight: 600;
+	transition: .3s;
+}
+.blog__title:hover a{
+	color:#00897b;
+	text-decoration: none;
+	cursor: url('../img/cursor-2.png'),pointer;
+}
+.blog__date {
+	position: relative;
+	display: inline-block;
+	margin-right: 30px;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.blog__date i {
+	margin-right: 10px;
+}
+.blog__note {
+	position: relative;
+	display: inline-block;
+	margin-right: 35px;
+	font-size: 17px;
+	font-weight: 600;
+}
+.blog__note i{
+	margin-right: 10px;
+}
+.blog__text {
+	margin-top: 30px;
+	font-size: 15px;
 }
